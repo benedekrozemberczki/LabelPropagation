@@ -42,28 +42,22 @@ The following commands learn a graph embedding and cluster center and writes the
 Creating a GEMSEC embedding of the default dataset with the default hyperparameter settings. Saving the embedding, cluster centres and the log file at the default path.
 
 ```
-python src/embedding_clustering.py
+python src/label_propagation.py
 ```
 Creating a DeepWalk embedding of the default dataset with the default hyperparameter settings. Saving the embedding, cluster centres and the log file at the default path.
 
 ```
-python src/embedding_clustering.py --model DW
+python src/label_propagation.py --weighting unit
 ```
 
 Turning off the model saving.
 
 ```
-python src/embedding_clustering.py --dump-matrices False
+python src/label_propagation.py --seed 32
 ```
 
 Creating an embedding of an other dataset the `Facebook Companies`. Saving the output and the log in a custom place.
 
 ```
-python src/embedding_clustering.py --input data/company_edges.csv  --embedding-output output/embeddings/company_embedding.csv --log-output output/cluster_means/company_means.csv --cluster-mean-output output/logs/company.json
-```
-
-Creating a clustered embedding of the default dataset in 32 dimensions, 20 sequences per source node with length 160 and 10 cluster centers.
-
-```
-python src/embedding_clustering.py --dimensions 32 --num-of-walks 20 --random-walk-length 160 --cluster-number 10
+python src/embedding_clustering.py --rounds 100
 ```
