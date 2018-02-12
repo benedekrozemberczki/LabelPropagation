@@ -28,11 +28,11 @@ Learning of the embedding is handled by the `src/label_propagation.py` script wh
 #### Model options
 
 ```
-  --input STR                   Input graph path.                                 Default is `data/politician_edges.csv`.                                      Default is `output/logs/politician.log`.
-  --assignment-output STR       Node-cluster assignment dictionary path.          Default is `output/assignments/politician.json`.
-  --weighing STR            Number of clusters.                                           Default is 20.
-  --rounds INT            Number of clusters.                                           Default is 20.
-  --seed INT         Weight construction technique for regularization.             Default is `normalized_overlap`.
+  --input STR                Input graph path.                          Default is `data/politician_edges.csv`.                                     
+  --assignment-output STR    Node-cluster assignment dictionary path.   Default is `output/politician.json`.
+  --weighing STR             Weighting strategy.                        Default is `overlap`.
+  --rounds INT               Number of iteations.                       Default is 30.
+  --seed INT                 Initial seed           .                   Default is 42.
 ```
 
 ### Examples
