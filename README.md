@@ -30,10 +30,9 @@ Learning of the embedding is handled by the `src/label_propagation.py` script wh
 ```
   --input STR                   Input graph path.                                 Default is `data/politician_edges.csv`.                                      Default is `output/logs/politician.log`.
   --assignment-output STR       Node-cluster assignment dictionary path.          Default is `output/assignments/politician.json`.
-  --cluster-number INT            Number of clusters.                                           Default is 20.
-  --cluster-number INT            Number of clusters.                                           Default is 20.
-  --overlap-weighting STR         Weight construction technique for regularization.             Default is `normalized_overlap`.
-  --regularization-noise FLOAT    Uniform noise max and min on the feature vector distance.     Default is 10**-8.
+  --weighing STR            Number of clusters.                                           Default is 20.
+  --rounds INT            Number of clusters.                                           Default is 20.
+  --seed INT         Weight construction technique for regularization.             Default is `normalized_overlap`.
 ```
 
 ### Examples
