@@ -15,6 +15,7 @@ tqdm              4.19.5
 numpy             1.13.3
 pandas            0.20.3
 jsonschema        2.6.0
+python-louvain    0.11
 ```
 
 ### Datasets
