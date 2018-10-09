@@ -1,10 +1,12 @@
 Label Propagation
 ============================================
 <p align="justify">
-Label Propagation is a randomized community detection algorithm, it gives a large number of small sized clusters. It is a useful benchmark.  
+Label Propagation is a randomized community detection algorithm, it gives a large number of small sized clusters. It is a simple but useful benchmark.  
 </p>
-
-This repository provides a reference implementation for Label Propagation.
+<p align="center">
+  <img width="500" src="labelprop.png">
+</p>
+This repository provides an implementation for Label Propagation.
 
 ### Requirements
 
