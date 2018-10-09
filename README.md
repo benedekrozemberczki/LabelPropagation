@@ -29,11 +29,11 @@ Creating a clustering is handled by the `src/label_propagation.py` script which 
 #### Model options
 
 ```
-  --input STR                Input graph path.                          Default is `data/politician_edges.csv`.                                     
-  --assignment-output STR    Node-cluster assignment dictionary path.   Default is `output/politician.json`.
-  --weighing STR             Weighting strategy.                        Default is `overlap`.
-  --rounds INT               Number of iteations.                       Default is 30.
-  --seed INT                 Initial seed           .                   Default is 42.
+  --input               STR    Input graph path.                          Default is `data/politician_edges.csv`.                                     
+  --assignment-output   STR    Node-cluster assignment dictionary path.   Default is `output/politician.json`.
+  --weighing            STR    Weighting strategy.                        Default is `overlap`.
+  --rounds              INT    Number of iteations.                       Default is 30.
+  --seed                INT    Initial seed           .                   Default is 42.
 ```
 
 ### Examples
