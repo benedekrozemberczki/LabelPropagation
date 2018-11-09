@@ -1,10 +1,11 @@
-import networkx as nx
 import random
+import pandas as pd
+import networkx as nx
 from tqdm import tqdm
 from community import modularity
-import pandas as pd
-from calculation_helper import overlap, unit, min_norm, normalized_overlap,  overlap_generator
 from print_and_read import json_dumper
+from calculation_helper import overlap, unit, min_norm, normalized_overlap,  overlap_generator
+
 
 class LabelPropagator:
 
@@ -46,7 +47,7 @@ class LabelPropagator:
                 scores[neighbor_label] = scores[neighbor_label] +  self.weights[(neighbor,source)]
             else:
                 scores[neighbor_label] = self.weights[(neighbor,source)]
-        top = [key for key,val in scores.iteritems() if val == max(scores.values())]
+        top = [key for key,val in scores.items() if val == max(scores.values())]
         return random.sample(top,1)[0]
 
     def do_a_propagation(self):
@@ -70,9 +71,9 @@ class LabelPropagator:
         index = 0
         while index < self.rounds and self.flag:
             index = index + 1
-            print("Label propagation round: " + str(index))
+            print("\nLabel propagation round: " + str(index)+".\n")
             self.do_a_propagation()
         print("")
-        print("Modularity is: "+  str(round(modularity(self.labels,self.graph),3)) + ".")
+        print("Modularity is: "+  str(round(modularity(self.labels,self.graph),3)) + ".\n")
         json_dumper(self.labels, self.args.assignment_output)
 

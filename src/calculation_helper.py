@@ -20,5 +20,5 @@ def min_norm(g, node_1, node_2):
 
 def overlap_generator(metric, graph):
     edges = nx.edges(graph)
-    edges = edges + map(lambda x: (x[1], x[0]), edges)
+    edges = edges + [(edge[1], edge[0]) for edge in edges]
     return {edge: metric(graph, edge[0], edge[1]) for edge in tqdm(edges)}
