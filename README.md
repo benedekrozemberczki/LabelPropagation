@@ -9,13 +9,12 @@ Label Propagation is a randomized community detection algorithm, it gives a larg
 This repository provides an implementation for Label Propagation.
 
 ### Requirements
-
-The codebase is implemented in Python 2.7. package versions used for development are just below.
+The codebase is implemented in Python 3.5.2 | Anaconda 4.2.0 (64-bit). Package versions used for development are just below.
 ```
 networkx          1.11
-tqdm              4.19.5
-numpy             1.13.3
-pandas            0.20.3
+tqdm              4.28.1
+numpy             1.15.4
+pandas            0.23.4
 jsonschema        2.6.0
 python-louvain    0.11
 texttable         0.15.0
