@@ -13,13 +13,31 @@ def normalized_overlap(g, node_1, node_2):
     return float(inter)/float(unio)
 
 def overlap(g, node_1, node_2):
+    """
+    Calculating the neighbourhood overlap.
+    :param g: NetworkX graph.
+    :param node_1: First end node of edge.
+    :param node_2: Second end node of edge.
+    """
     inter = len(set(nx.neighbors(g, node_1)).intersection(set(nx.neighbors(g, node_2))))
     return float(inter)
 
 def unit(g, node_1, node_2):
+    """
+    Creating unit weights for edge.
+    :param g: NetworkX graph.
+    :param node_1: First end node of edge.
+    :param node_2: Second end node of edge.
+    """
     return 1
 
 def min_norm(g, node_1, node_2):
+    """
+    Calculating the min normalized neighbourhood overlap.
+    :param g: NetworkX graph.
+    :param node_1: First end node of edge.
+    :param node_2: Second end node of edge.
+    """
     inter = len(set(nx.neighbors(g, node_1)).intersection(set(nx.neighbors(g, node_2))))
     min_norm = min(len(set(nx.neighbors(g, node_1))), len(set(nx.neighbors(g, node_2))))
     return float(inter)/float(min_norm)
