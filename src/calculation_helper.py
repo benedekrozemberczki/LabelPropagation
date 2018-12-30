@@ -2,6 +2,9 @@ import networkx as nx
 from tqdm import tqdm
 
 def normalized_overlap(g, node_1, node_2):
+    """
+    Calculating the normalized neighbourhood overlap.
+    """
     inter = len(set(nx.neighbors(g, node_1)).intersection(set(nx.neighbors(g, node_2))))
     unio = len(set(nx.neighbors(g, node_1)).union(set(nx.neighbors(g, node_2))))
     return float(inter)/float(unio)
