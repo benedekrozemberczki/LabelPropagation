@@ -26,8 +26,9 @@ def graph_reader(input_path):
 
 def json_dumper(data, path):
     """
+    Function to save a JSON to disk.
     :param data: Dictionary of cluster memberships.
-    :param path: Path for dumping the json.
+    :param path: Path for dumping the JSON.
     """
     with open(path, 'w') as outfile:
         json.dump(data, outfile)
