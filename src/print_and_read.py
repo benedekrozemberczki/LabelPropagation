@@ -15,10 +15,19 @@ def argument_printer(args):
     print(t.draw())
 
 def graph_reader(input_path):
+    """
+    Function to read graph from input path.
+    :param input_path: Graph read into memory.
+    :return graph: Networkx graph.
+    """
     edges = pd.read_csv(input_path)
     graph = nx.from_edgelist(edges.values.tolist())
     return graph
 
 def json_dumper(data, path):
+    """
+    :param data: Dictionary of cluster memberships.
+    :param path: Path for dumping the json.
+    """
     with open(path, 'w') as outfile:
         json.dump(data, outfile)
