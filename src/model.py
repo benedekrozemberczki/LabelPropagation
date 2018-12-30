@@ -73,8 +73,6 @@ class LabelPropagator:
         else:
             self.label_count = current_label_count       
 
-
-
     def do_a_series_of_propagations(self):
         """
         Doing propagations until convergence or reaching time budget.
