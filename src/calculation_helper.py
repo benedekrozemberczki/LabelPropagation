@@ -4,6 +4,9 @@ from tqdm import tqdm
 def normalized_overlap(g, node_1, node_2):
     """
     Calculating the normalized neighbourhood overlap.
+    :param g: NetworkX graph.
+    :param node_1: First end node of edge.
+    :param node_2: Second end node of edge.
     """
     inter = len(set(nx.neighbors(g, node_1)).intersection(set(nx.neighbors(g, node_2))))
     unio = len(set(nx.neighbors(g, node_1)).union(set(nx.neighbors(g, node_2))))
