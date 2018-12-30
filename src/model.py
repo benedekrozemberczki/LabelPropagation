@@ -6,12 +6,15 @@ from community import modularity
 from print_and_read import json_dumper
 from calculation_helper import overlap, unit, min_norm, normalized_overlap,  overlap_generator
 
-
 class LabelPropagator:
-
+    """
+    Label propagation class.
+    """
     def __init__(self, graph, args):
-
         """
+        Setting up the Label Propagator object.
+        :param graph: NetworkX object.
+        :param args: Arguments object.
         """
         self.args = args
         self.seeding = args.seed
@@ -25,6 +28,8 @@ class LabelPropagator:
 
     def weight_setup(self, weighting):
         """
+        Calculating the edge weights.
+        :param weighting: Type of edge weights.
         """
 
         if weighting == "overlap":
@@ -38,8 +43,10 @@ class LabelPropagator:
 
     def make_a_pick(self, source, neighbors):
         """
+        Choosing a neighbor from a propagation source node.
+        :param source: Source node.
+        :param neigbors: Neighboring nodes.
         """
-
         scores = {}
         for neighbor in neighbors:
             neighbor_label = self.labels[neighbor]
@@ -52,6 +59,7 @@ class LabelPropagator:
 
     def do_a_propagation(self):
         """
+        Doing a propagation round.
         """
         random.seed(self.seeding)
         random.shuffle(self.nodes)
@@ -68,6 +76,9 @@ class LabelPropagator:
 
 
     def do_a_series_of_propagations(self):
+        """
+        Doing propagations until convergence or reaching time budget.
+        """
         index = 0
         while index < self.rounds and self.flag:
             index = index + 1
@@ -76,4 +87,3 @@ class LabelPropagator:
         print("")
         print("Modularity is: "+  str(round(modularity(self.labels,self.graph),3)) + ".\n")
         json_dumper(self.labels, self.args.assignment_output)
-
