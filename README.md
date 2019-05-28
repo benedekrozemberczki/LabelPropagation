@@ -1,4 +1,4 @@
-Label Propagation
+Label Propagation <img src="https://img.shields.io/badge/stars-10+-blue.svg"/> <img src="https://img.shields.io/badge/forks-5+-blue.svg"/> <img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
 ============================================
 <p align="justify">
 Label Propagation is a randomized community detection algorithm, it gives a large number of small sized clusters. It is a simple but useful benchmark.  
