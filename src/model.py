@@ -31,7 +31,6 @@ class LabelPropagator:
         Calculating the edge weights.
         :param weighting: Type of edge weights.
         """
-
         if weighting == "overlap":
             self.weights  = overlap_generator(overlap, self.graph)
         elif weighting == "unit":
