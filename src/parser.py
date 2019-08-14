@@ -6,7 +6,6 @@ def parameter_parser():
     A method to parse up command line parameters. By default it does community detection on the Facebook politicians network.
     The default hyperparameters give a good quality clustering. Default weighting happens by neighborhood overlap.
     """
-
     parser = argparse.ArgumentParser(description = "Run Label Propagation.")
 
     parser.add_argument("--input",
@@ -35,4 +34,3 @@ def parameter_parser():
 	                help = "Random seed. Default is 42.")
 
     return parser.parse_args()
-
