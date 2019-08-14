@@ -44,7 +44,7 @@ def min_norm(g, node_1, node_2):
 
 def overlap_generator(metric, graph):
     """
-    Calculating the  overlap for each edge.
+    Calculating the overlap for each edge.
     :param metric: Weight metric.
     :param graph: NetworkX object.
     :return : Edge weight hash table.
