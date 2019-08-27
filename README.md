@@ -62,5 +62,5 @@ python src/label_propagation.py --seed 32
 Using label propagation with 100 iteration rounds.
 
 ```
-python src/embedding_clustering.py --rounds 100
+python src/label_propagation.py --rounds 100
 ```
