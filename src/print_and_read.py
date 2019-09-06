@@ -1,6 +1,6 @@
+import json
 import pandas as pd
 import networkx as nx
-import json
 from texttable import Texttable
 
 def argument_printer(args):
