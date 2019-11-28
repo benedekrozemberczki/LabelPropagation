@@ -1,3 +1,5 @@
+"""Tools to calculate edge scores."""
+
 import networkx as nx
 from tqdm import tqdm
 

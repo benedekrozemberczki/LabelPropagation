@@ -1,5 +1,7 @@
+"""Running label propagation."""
+
 from model import LabelPropagator
-from parser import parameter_parser
+from param_parser import parameter_parser
 from print_and_read import graph_reader, argument_printer
 
 def create_and_run_model(args):

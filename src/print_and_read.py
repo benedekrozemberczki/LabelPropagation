@@ -1,3 +1,5 @@
+"""Tools for data reading and writing."""
+
 import json
 import pandas as pd
 import networkx as nx
@@ -11,7 +13,8 @@ def argument_printer(args):
     args = vars(args)
     keys = sorted(args.keys())
     t = Texttable() 
-    t.add_rows([["Parameter", "Value"]] +  [[k.replace("_"," ").capitalize(),args[k]] for k in keys])
+    t.add_rows([["Parameter", "Value"]])
+    t.add_rows([[k.replace("_", " ").capitalize(), args[k]] for k in keys])
     print(t.draw())
 
 def graph_reader(input_path):
