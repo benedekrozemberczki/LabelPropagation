@@ -20,7 +20,7 @@ class LabelPropagator:
         self.args = args
         self.seeding = args.seed
         self.graph = graph
-        self.nodes = graph.nodes()
+        self.nodes = [node for node in graph.nodes()]
         self.rounds = args.rounds
         self.labels = {node: node for node in self.nodes}
         self.label_count = len(set(self.labels.values()))

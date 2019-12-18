@@ -51,6 +51,6 @@ def overlap_generator(metric, graph):
     :param graph: NetworkX object.
     :return : Edge weight hash table.
     """
-    edges = nx.edges(graph)
-    edges = edges + [(edge[1], edge[0]) for edge in edges]
+    edges =[(edge[0], edge[1]) for edge in nx.edges(graph)]
+    edges = edges + [(edge[1], edge[0]) for edge in nx.edges(graph)]
     return {edge: metric(graph, edge[0], edge[1]) for edge in tqdm(edges)}
