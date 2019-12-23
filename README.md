@@ -17,7 +17,7 @@ This repository provides an implementation for Label Propagation as described in
 > ear linear Time Algorithm to Detect Community Structures in Large-scale Networks.
 > Usha Nandini Raghavan, Reka Albert, Soundar Kumara.
 > Phyical Review E, 2008.
-> [[Paper]](https://smartyfh.com/Documents/18DANMF.pdf)
+> [[Paper]](https://arxiv.org/abs/0709.2938)
 
 
 ### Requirements
