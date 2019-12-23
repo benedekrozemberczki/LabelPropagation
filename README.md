@@ -1,7 +1,7 @@
 Label Propagation ![GitHub stars](https://img.shields.io/github/stars/benedekrozemberczki/LabelPropagation.svg?style=plastic) ![GitHub forks](https://img.shields.io/github/forks/benedekrozemberczki/LabelPropagation.svg?color=blue&style=plastic) ![License](https://img.shields.io/github/license/benedekrozemberczki/LabelPropagation.svg?color=blue&style=plastic)
 ============================================
 <p align="justify">
-An implementation of "Near Linear Time algorithm to Detect Community Structures in Large-Scale Networks" (Physical Review E 2008).
+A NetworkX implementation of "Near Linear Time algorithm to Detect Community Structures in Large-Scale Networks" (Physical Review E 2008).
 </p>
 <p align="center">
   <img width="500" src="labelprop.png">
