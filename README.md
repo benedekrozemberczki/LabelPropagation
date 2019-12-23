@@ -14,7 +14,7 @@ Community detection and analysis is an important methodology for understanding t
 
 This repository provides an implementation for Label Propagation as described in the paper:
 
-> ear linear Time Algorithm to Detect Community Structures in Large-scale Networks.
+> Near linear Time Algorithm to Detect Community Structures in Large-scale Networks.
 > Usha Nandini Raghavan, Reka Albert, Soundar Kumara.
 > Phyical Review E, 2008.
 > [[Paper]](https://arxiv.org/abs/0709.2938)
