@@ -1,7 +1,7 @@
 Label Propagation ![GitHub stars](https://img.shields.io/github/stars/benedekrozemberczki/LabelPropagation.svg?style=plastic) ![GitHub forks](https://img.shields.io/github/forks/benedekrozemberczki/LabelPropagation.svg?color=blue&style=plastic) ![License](https://img.shields.io/github/license/benedekrozemberczki/LabelPropagation.svg?color=blue&style=plastic)
 ============================================
 <p align="justify">
-Label Propagation is a randomized community detection algorithm, it gives a large number of small sized clusters. It is a simple but useful benchmark.  
+An implementation of "Near Linear Time algorithm to Detect Community Structures in Large-Scale Networks" (Physical Review E 2008).
 </p>
 <p align="center">
   <img width="500" src="labelprop.png">
