@@ -12,6 +12,8 @@ A NetworkX implementation of "Near Linear Time algorithm to Detect Community Str
 <p align="justify">
 Community detection and analysis is an important methodology for understanding the organization of various real-world networks and has applications in problems as diverse as consensus formation in social communities or the identification of functional modules in biochemical networks. Currently used algorithms that identify the community structures in large-scale real-world networks require a priori information such as the number and sizes of communities or are computationally expensive. In this paper we investigate a simple label propagation algorithm that uses the network structure alone as its guide and requires neither optimization of a pre-defined objective function nor prior information about the communities. In our algorithm every node is initialized with a unique label and at every step each node adopts the label that most of its neighbors currently have. In this iterative process densely connected groups of nodes form a consensus on a unique label to form communities. We validate the algorithm by applying it to networks whose community structures are known. We also demonstrate that the algorithm takes an almost linear time and hence it is computationally less expensive than what was possible so far. .</p>
 
+The model is now also available in the package [Karate Club](https://github.com/benedekrozemberczki/karateclub).
+
 This repository provides an implementation for Label Propagation as described in the paper:
 
 > Near linear Time Algorithm to Detect Community Structures in Large-scale Networks.
