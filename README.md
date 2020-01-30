@@ -58,23 +58,23 @@ The following commands create cluster assignments and writes them to disk.
 
 Creating communities for the default dataset with the default hyperparameter settings.
 
-```
-python src/label_propagation.py
+```sh
+$ python src/label_propagation.py
 ```
 Using unit weighted label propagation.
 
-```
-python src/label_propagation.py --weighting unit
+```sh
+$ python src/label_propagation.py --weighting unit
 ```
 
 Changing the random seed.
 
-```
-python src/label_propagation.py --seed 32
+```sh
+$ python src/label_propagation.py --seed 32
 ```
 
 Using label propagation with 100 iteration rounds.
 
-```
-python src/label_propagation.py --rounds 100
+```sh
+$ python src/label_propagation.py --rounds 100
 ```
