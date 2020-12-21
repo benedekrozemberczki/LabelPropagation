@@ -1,4 +1,4 @@
-Label Propagation ![License](https://img.shields.io/github/license/benedekrozemberczki/LabelPropagation.svg?color=blue&style=plastic) [![Arxiv](https://img.shields.io/badge/ArXiv-0709.2938-orange.svg?color=blue&style=plastic)](https://arxiv.org/abs/0709.2938)
+Label Propagation ![License](https://img.shields.io/github/license/benedekrozemberczki/LabelPropagation.svg?color=blue&style=plastic) [![Arxiv](https://img.shields.io/badge/ArXiv-0709.2938-orange.svg?color=blue&style=plastic)](https://arxiv.org/abs/0709.2938) [![repo size](https://img.shields.io/github/repo-size/benedekrozemberczki/LabelPropagation.svg)](https://github.com/benedekrozemberczki/LabelPropagation/archive/master.zip)
 ============================================
 <p align="justify">
 A NetworkX implementation of **Near Linear Time algorithm to Detect Community Structures in Large-Scale Networks (Physical Review E 2008).**
