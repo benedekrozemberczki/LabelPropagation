@@ -78,3 +78,8 @@ Using label propagation with 100 iteration rounds.
 ```sh
 $ python src/label_propagation.py --rounds 100
 ```
+--------------------------------------------------------------------------------
+
+**License**
+
+- [GNU License](https://github.com/benedekrozemberczki/LabelPropagation/blob/master/LICENSE)
